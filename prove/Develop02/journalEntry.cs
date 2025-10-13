@@ -12,7 +12,6 @@ public class JournalEntry
 
     public string GetEntryText()
     {
-        // Returns just the user's response
         return _text;
     }
 
@@ -23,7 +22,6 @@ public class JournalEntry
 
     public string GetFullEntry()
     {
-        // Returns a full formatted entry string
         return $"Date: {_date}\nPrompt: {_prompt}\nResponse: {_text}";
     }
 }
