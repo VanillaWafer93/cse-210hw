@@ -22,9 +22,9 @@ public class Journal
             foreach (string entry in _entries)
             {
                 Console.WriteLine(entry);
-                // Console.WriteLine();
                 
             }
+                // Console.WriteLine("");
     }
 
     public void SaveFile()
@@ -36,7 +36,7 @@ public class Journal
         {
             foreach (string entry in _entries)
             {
-                outputFile.WriteLine(entry);
+                outputFile.WriteLine($"{entry}\n");
             }
         }
         Console.WriteLine($"Journal saved to {filename}");

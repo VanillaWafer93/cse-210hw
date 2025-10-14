@@ -22,6 +22,6 @@ public class JournalEntry
 
     public string GetFullEntry()
     {
-        return $"Date: {_date}\nPrompt: {_prompt}\nResponse: {_text}";
+        return $"Date: {_date}\nPrompt: {_prompt}\nResponse: {_text}\n";
     }
 }
