@@ -1,20 +1,14 @@
-public class Student
+public class Student : Person
 {
-    public string _firstName;
-    public string _lastName;
-    public string _id;
+    private string _number;
 
-    public void DisplayName()
+    public Student(string name, string number) : base(name)
     {
-        Console.WriteLine($"{_firstName} {_lastName}");
+        _number = number;
     }
-
-    public void DisplayInfo()
+    
+    public string GetNumber()
     {
-        Console.WriteLine("Student info");
-        Console.WriteLine($" {_firstName} {_lastName}");
-        Console.WriteLine($" {_id}");
+        return _number;
     }
-
-
 }
