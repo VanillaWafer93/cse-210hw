@@ -1,0 +1,4 @@
+65
+SimpleGoal:bob,5,do it man,True
+EternalGoal:tt,10,frhkgfahef
+ChecklistGoal:bbbbb,5,rhfsdjafs,5,20,6
