@@ -22,7 +22,7 @@ public class ChecklistGoal : Goal
     {
         _completedTimes++;  //marking number of times complete
 
-        if (_completedTimes == _requiredTimes)
+        if (_completedTimes == _requiredTimes)  //give bonus when reached correct amount
             return GetPoints() + _bonus;
 
         return GetPoints();
