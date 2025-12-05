@@ -1,3 +1,0 @@
-15
-SimpleGoal:tt,5,rjhgdfjvhgsdj,True
-ChecklistGoal:rjt,10,ejrfjsfhgdskj,5,20,1

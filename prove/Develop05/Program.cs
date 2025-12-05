@@ -19,7 +19,7 @@ class Program
             Console.WriteLine("5. Load Goals");
             Console.WriteLine("6. Quit");
 
-            Console.Write("Select an option: ");
+            Console.Write("Select an option: ");  //option select area
             string choice = Console.ReadLine();
 
             if (choice == "1") CreateGoal();
@@ -77,7 +77,7 @@ class Program
         foreach (Goal g in _goals)
         {
             Console.WriteLine($"{i}. {g.GetStatus()} {g.GetName()} ({g.GetDescription()})");
-            i++;
+            i++;  //changes the display number for the list
         }
     }
 
