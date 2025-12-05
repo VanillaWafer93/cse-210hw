@@ -25,7 +25,10 @@ public abstract class Character
         return damage;
     }
 
-    public abstract  int SpecialAttack();
+    public virtual int SpecialAttack()
+    {
+        return 0;
+    }
     public abstract  int TakeDamage();
     public int Heal()
     {
