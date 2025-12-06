@@ -12,6 +12,16 @@ public class Actions
     }
 
 
+    public void DealDamage()
+    {
+        
+    }
+
+
+    public void HealDamage()
+    {
+        
+    }
 
 
 

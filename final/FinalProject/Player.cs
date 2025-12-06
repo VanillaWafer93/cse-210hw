@@ -14,12 +14,12 @@ public class Player : Character
 
     public override int TakeDamage()
     {
-        
+        return 0;
     }
 
     public override int SpecialAttack()
     {
-
+        return 0;
     }
 
 
