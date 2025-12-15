@@ -2,7 +2,7 @@ class Program
 {
     static void Main()
     {
-        // Create player instances once
+        // Create players
         Hacker hacker = new Hacker("Hacker", "150", "Tech expert", "Player");
         Hitman hitman = new Hitman("Hitman", "150", "Silent killer", "Player");
 
@@ -24,7 +24,7 @@ class Program
             int damage = playerActions.SelectAction();
             bool isAttack = damage > 0 && !playerActions.CurrentActionIsHeal();
 
-            // If attack, choose enemy
+            // Choose enemy to attack
             if (isAttack)
             {
                 Console.WriteLine("\nEnemies:");
@@ -60,7 +60,7 @@ class Program
         Console.WriteLine("\nAll enemies defeated! You win!");
     }
 
-    // Let player choose which character to play this turn
+    // Choosing character to play each turn
     static Player ChoosePlayer(Hacker hacker, Hitman hitman)
     {
         Console.WriteLine("\nChoose Player:\n1. Hacker\n2. Hitman");
