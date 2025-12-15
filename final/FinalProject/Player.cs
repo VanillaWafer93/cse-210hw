@@ -1,26 +1,21 @@
-using System.Net;
-
 public class Player : Character
 {
+    public Player(string name, string health, string description, string type)
+        : base(name, health, description, type) { }
 
-    public Player(string name , string health , string description , string type)
-    : base(name , health , description , type) {}
-
-    public Action ActionSelect()
+    public override int TakeDamage(int damage, Player attacker = null)
     {
-        
+        _health -= damage;
+        Console.WriteLine($"{_name} takes {damage} damage. Remaining HP: {_health}");
+        return _health;
     }
 
+    public override int SpecialAttack() => 0;
 
-    public override int TakeDamage()
+    public int ChooseAction()
     {
-        return 0;
+        Console.WriteLine("\nChoose action:\n1. Basic Attack\n2. Special Attack\n3. Heal");
+        int choice = int.Parse(Console.ReadLine());
+        return choice;
     }
-
-    public override int SpecialAttack()
-    {
-        return 0;
-    }
-
-
 }
